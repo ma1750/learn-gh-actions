@@ -15,4 +15,8 @@ jobs:
           git add PersonalDictionary.zip
           git commit -m "to zip"
           git push
+      - name: discord-notify
+        if: always()
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK }}
 
