@@ -16,6 +16,7 @@ jobs:
           git commit -m "to zip"
           git push
       - name: discord-notify
+        uses: sarisia/actions-status-discord@v1
         if: always()
         with:
           webhook: ${{ secrets.DISCORD_WEBHOOK }}
