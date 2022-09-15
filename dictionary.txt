@@ -1,2 +1,3 @@
 HW  Hello,World!  ja-JP
+GH  GitHub  ja-JP
 
