@@ -7,15 +7,11 @@ jobs:
   to-zip:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: to-zip
-        run: |
-          zip PersonalDictionary.zip dictionary.txt
       - name: upload-artifact
         uses: actions/upload-artifact@v3
         with:
           name: PersonalDictionary.zip
-          path: PersonalDictionary.zip
+          path: dictionary.txt
       - name: discord-notify
         uses: sarisia/actions-status-discord@v1
         if: always()
