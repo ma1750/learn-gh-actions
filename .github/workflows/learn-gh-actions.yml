@@ -8,11 +8,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: to-zip
-      - uses: actions/checkout@v3
-      - run: |
+        uses: actions/checkout@v3
+        run: |
           zip PersonalDictionary.zip dictionary.txt
       - name: upload-artifact
-      - uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v3
         with:
           name: PersonalDictionary.zip
           path: PersonalDictionary.zip
