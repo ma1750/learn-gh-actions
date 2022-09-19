@@ -4,3 +4,4 @@ GL	GitLab	ja-JP
 MS	Microsoft	ja-JP
 AP	Apple	ja-JP
 YT	YouTube	ja-JP
+出口	Yahoo!	ja-JP
