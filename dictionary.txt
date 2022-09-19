@@ -3,3 +3,4 @@ GH	GitHub	ja-JP
 GL	GitLab	ja-JP
 MS	Microsoft	ja-JP
 AP	Apple	ja-JP
+YT	YouTube	ja-JP
