@@ -11,7 +11,7 @@ jobs:
       - name: upload-artifact
         uses: actions/upload-artifact@v3
         with:
-          name: PersonalDictionary.zip
+          name: PersonalDictionary
           path: dictionary.txt
       - name: discord-notify
         uses: sarisia/actions-status-discord@v1
