@@ -7,8 +7,8 @@ jobs:
   to-zip:
     runs-on: ubuntu-latest
     steps:
-      - name: to-zip
         uses: actions/checkout@v3
+      - name: to-zip
         run: |
           zip PersonalDictionary.zip dictionary.txt
       - name: upload-artifact
