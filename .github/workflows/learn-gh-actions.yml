@@ -7,14 +7,15 @@ jobs:
   to-zip:
     runs-on: ubuntu-latest
     steps:
+      - name: to-zip
       - uses: actions/checkout@v3
       - run: |
           zip PersonalDictionary.zip dictionary.txt
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git add PersonalDictionary.zip
-          git commit -m "to zip"
-          git push
+      - name: upload-artifact
+      - uses: actions/upload-artifact@v3
+        with:
+          name: PersonalDictionary.zip
+          path: PersonalDictionary.zip
       - name: discord-notify
         uses: sarisia/actions-status-discord@v1
         if: always()
